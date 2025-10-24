@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto de Ingeniería Equipo 5</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 60px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        h1, h2, h3{
+            color: #f38f00;
+        }
+
+        h3 {
+            color: #030303;
+        }
+        .section {
+            background: #e9dfac;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+         .section span {
+            color: #e76816;
+            font-weight: bold;
+         }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 60px;
+        }
+
+        .contenedor {
+            margin-top: 30px;
+            margin-bottom: 60px;
+            overflow: hidden;
+
+         @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+                }
+            }
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            aspect-ratio: 16 / 9;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 300%;
+        }
+
+        .slide {
+            position: relative;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+            
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+    </style>
+</head>
+<body>
+    <h1>La conservación del jaguar</h1>
+
+     <style>
+      .centrado {
+        text-align: center;
+      }
+    </style>
+
+    <div style="text-align: center;">
+    <img src="Imagenes_pdi/Jaguar.jpeg" alt="Jaguar" width="1000" height="550" />
+    </div>
+
+    <p class="centrado">
+       El jaguar (Panthera onca) es el felino más grande de América y uno de los depredadores tope más importantes de los ecosistemas donde habita. 
+       Reconocible por su pelaje amarillo dorado con manchas negras en forma de roseta, el jaguar es un símbolo de fuerza y biodiversidad en los 
+       bosques y selvas del continente americano. A diferencia de otros grandes felinos, el jaguar se caracteriza por su capacidad de adaptación a 
+       distintos hábitats, desde densas selvas tropicales hasta zonas semiáridas, ríos y pantanos, lo que le permite ocupar un amplio rango geográfico.
+    </p>
+
+    <p class="centrado">
+        Estos mamíferos son criaturas solitarias y muy territoriales que requieren grandes extensiones de tierra para subsistir de manera libre, 
+        anteriormente se extendían desde el centro de Argentina hasta el suroeste de los Estados Unidos, habitaban en selvas tropicales, sabanas y 
+        praderas; así también regiones en donde se le permite cazar de manera terrestre y acuática dado que este animal es muy habilidoso y ágil en ambos terrenos.
+    </p>
+
+    <h2>Datos interesantes sobre el jaguar</h2>
+
+  <div class="container">
+        <div class="section">
+            <h2>Cazador oportunista</h2>
+            <p>Se le considera un cazador oportunista, ya que su dieta es muy variada y adaptable a las condiciones del entorno. 
+                A diferencia de otros grandes felinos que se especializan en ciertos tipos de presas, el jaguar puede alimentarse 
+                de mamíferos medianos como venados, pecaríes y tapires, pero también de reptiles como caimanes o tortugas, e incluso de peces. 
+                Esta capacidad de aprovechar distintos recursos le permite sobrevivir en diversos hábitats.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Especie bandera</h2>
+            <p>Debido a su belleza, fuerza y presencia en la identidad cultural de muchos países latinoamericanos, el jaguar se usa como ícono en campañas, 
+                proyectos y estrategias que buscan generar conciencia y apoyo público. Al ser un animal tan admirado y representativo, las personas suelen 
+                sentirse motivadas a protegerlo, convirtiéndose así en un símbolo que impulsa esfuerzos sociales y comunitarios en favor de la naturaleza.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Buenos nadadores</h2>
+            <p>A diferencia de la mayoría de los felinos, que suelen evitar el agua, los jaguares disfrutan nadar y se sienten cómodos cazando en ambientes acuáticos. 
+                Esto les permite desplazarse entre zonas de su territorio atravesando cuerpos de agua, convirtiéndolos en uno de los felinos más versátiles del planeta.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Venerados</h2>
+            <p>El jaguar ha sido profundamente venerado en culturas latinoamericanas como la maya, la azteca y la olmeca, el jaguar representaba el poder, la fuerza, 
+                la valentía y la conexión con lo divino. Era considerado un símbolo de los dioses y del inframundo, y se le atribuían cualidades espirituales y mágicas. 
+                Asimismo también puede aparecer como guardián, guerrero o espíritu protector, lo que demuestra la profunda admiración hacia esta especie.
+            </p>
+        </div>
+    </div>
+
+    <h2>Territorio del jaguar</h2>
+
+    <p style="text-align: center;"> 
+        El jaguar habita una gran variedad de ecosistemas en América, desde las densas y húmedas selvas tropicales de México, Centroamérica y la Amazonía,
+        hasta bosques secos, sabanas y zonas semiáridas donde se encuentran recursos suficientes para su supervivencia. Su territorio se caracteriza por la presencia de ríos, 
+        lagunas y humedales, que no solo le brindan alimento, al albergar peces, tortugas y caimanes, sino que también le permiten desplazarse y cazar con gran habilidad tanto 
+        en tierra como en el agua. Los bosques y selvas donde habita están compuestos por árboles altos, enredaderas y arbustos densos que le proporcionan cobertura y puntos 
+        estratégicos para acechar a sus presas, mientras que los pastizales y claros le ofrecen espacios para desplazarse con sigilo. Históricamente, la distribución del jaguar 
+        se extendía desde el suroeste de los Estados Unidos hasta el norte de Argentina.
+    </p>
+
+    <div class="contenedor">
+        <img src="Imagenes_pdi/Extensión_del_Jaguar.jpeg" alt="Distribución historica del jaguar" width="400" height="350" style="float: left; margin-right: 40px;" />
+        <p>Dentro de México, los jaguares habitan y se extienden en áreas naturales conocidas como los Corredores del Jaguar (series de corredores biológicos y 
+            genéticos conectados en una sola unidad) y las Unidades de Conservación del Jaguar (unidades existentes dentro de los corredores del jaguar que mantienen la viabilidad 
+            de las poblaciones de jaguares). En México, la conservación de la distribución del jaguar (Panthera onca) y sus corredores biológicos es esencial para garantizar la 
+            persistencia de la especie y el equilibrio de los ecosistemas que habita. Los corredores biológicos son áreas naturales interconectadas que permiten el movimiento de los 
+            jaguares entre diferentes hábitats, facilitando el acceso a recursos como alimento y sitios de reproducción, y promoviendo la diversidad genética. Por otro lado, 
+            las Unidades de Conservación del Jaguar (UCJ) son territorios que albergan poblaciones estables de jaguares, con una disponibilidad continua de presas y hábitats en buen estado
+        </p>
+        
+        <p> México alberga una de las poblaciones más importantes de jaguares en América, distribuidas en diversas regiones como la Selva Maya, la Sierra Madre Occidental y la Península de 
+            Yucatán. La protección de estos corredores y unidades es crucial, ya que la fragmentación del hábitat, la deforestación y la expansión de actividades humanas han reducido 
+            significativamente su territorio, perdiendo alrededor del 50% de su distribución histórica. A día de hoy se calcula que en regiones de Sudamérica, principalmente Brasil (50%), 
+            Perú y Colombia es donde se encuentra la mayoría de jaguares con 163,098, y solamente 4,343 jaguares en el interior de México. (WWF. 2020). 
+        </p>
+    </div>
+    
+    <h2>Amenazas del Jaguar</h2>
+
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="https://s.france24.com/media/display/6d1e2174-c79e-11ea-addb-005056bff430/w:1280/p:16x9/c0ae3127da95370650708920f7c063d980078afc.jpg" alt="Jaguar 1" width="100%" height="100%" object-fit="contain">
+          <div class="caption">Fragmentación Del Hábitat</div>
+        </div>
+        <div class="slide">
+          <img src="Imagenes_pdi/caza_del_jaguar.jpeg" alt="Jaguar 2" width="100%" height="100%" object-fit="contain">
+          <div class="caption">Caza y Trafico Ilegal</div>
+        </div>
+        <div class="slide">
+          <img src="Imagenes_pdi/trafico_ilegal.jpeg" alt="Jaguar 3" width="100%" height="100%" object-fit="contain">
+          <div class="caption">Cambio Climatico</div>
+        </div>
+        <div class="slide">
+          <img src="Imagenes_pdi/atropellamiento_jaguar.jpg" alt="Jaguar 3" width="100%" height="100%" object-fit="contain">
+          <div class="caption">Atropellamientos por crecimiento urbano</div>
+        </div>
+        <div class="slide">
+          <img src="Imagenes_pdi/atropellamiento_jaguar.jpg" alt="Jaguar 3" width="100%" height="100%" object-fit="contain">
+          <div class="caption">Aislamiento Genético</div>
+        </div>
+      </div>
+      <button class="prev">⟨</button>
+      <button class="next">⟩</button>
+    </div>
+
+        <h2>Importancia Ecológica del Jaguar</h2>
+        <p>
+          La importancia ecológica del jaguar reside en la categorización que el gobierno mexicano le establece como una
+          <strong>especie clave, paraguas o indicadora</strong>
+          debido a los roles que cumple en el ecosistema. Primero, al ser una especie clave de consumidores terciarios, 
+          se encargan de moderar las poblaciones de las presas, de esta manera evitan el fenómeno “cascada trófica”. La cascada trófica da lugar 
+          cuando las especies carnívoras disminuyen en gran manera ocasionando el incremento de herbívoros, consecuentemente eliminando grandes 
+          cantidades de plantas y generando una transformación de gran magnitud capaz de presentar graves consecuencias en la estructura del hábitat. 
+        </p>
+
+        <p>
+          Después su efecto <strong>"paraguas"</strong> que se refiere a la gran extensión de tierra que necesitan llegando a necesitar un área de máximo de 283Km², 
+          por esta razón son utilizados para proteger las grandes extensiones de hábitat que ocupan y también el de especies menores, para que esta 
+          actividad se desarrolle de manera correcta se requiere una presencia sana y abundante de herbívoros y las plantas que los alimentan; el efecto 
+          paraguas permite que una gran diversidad de seres vivos coexistan en un hábitat. Por último, el efecto indicador señala que la existencia del 
+          jaguar es evidencia positiva sobre la conservación de ecosistemas y las comunidades que existen dentro de ella. (Issuu. 2020). 
+        </p>
+    </div>
+
+    <h1>Áreas Naturales Protegidas en México</h1>
+
+    <p style="text-align: center;">
+        México cuenta con una red de Áreas Naturales Protegidas (ANP) que desempeñan un papel crucial en la conservación del jaguar y su hábitat. 
+        Estas áreas están diseñadas para proteger la biodiversidad, preservar los ecosistemas y garantizar la supervivencia de especies emblemáticas como el jaguar. 
+        Algunas de las ANP más importantes para la conservación del jaguar en México incluyen:
+    </p>
+
+    <section class="section">
+        <h2>Reserva de la Biosfera Calakmul</h2>
+        <img src="Imagenes_pdi/Extensión_del_Jaguar.jpeg" alt="Distribución historica del jaguar" width="400" height="350" style="float: left; margin-right: 40px;" />
+        <p>Ubicada en el estado de Campeche, esta reserva es una de las áreas más grandes y biodiversas de México. 
+            Alberga una población significativa de jaguares y ofrece un hábitat protegido que incluye selvas tropicales, ríos y lagunas.
+        </p>
+    </section>
+
+    <footer>
+        <p>Gerardo Jacquez, Luis Fernando Cortes, Martin Calderon</p>
+    </footer>
+
+    <script>
+      const slides = document.querySelector('.slides');
+      const totalSlides = document.querySelectorAll('.slide').length;
+      let index = 0;
+
+      document.querySelector('.next').addEventListener('click', () => {
+        index = (index + 1) % totalSlides;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      });
+
+      document.querySelector('.prev').addEventListener('click', () => {
+        index = (index - 1 + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      });
+</script>
+
+</body>
+</html>
