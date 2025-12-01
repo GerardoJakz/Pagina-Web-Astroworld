@@ -2,8 +2,8 @@
 :root {
   --fondo: #0B3B24; /* Verde Oscuro (Selva) */
   --texto: #EFE9D5; /* Crema Claro */
-  --titulo: #D9A404; /* Amarillo Dorado (Jaguar) */
-  --seccion: #2C4D3B; /* Verde Intermedio / Oliva */
+  --titulo: #c67c05; /* Amarillo Dorado (Jaguar) */
+  --seccion: #325037; /* Verde Intermedio / Oliva */
   --acento: #556B2F; /* Verde Musgo / Oliva Oscuro */
   --sombra-card: rgba(0, 0, 0, 0.4);
 }
