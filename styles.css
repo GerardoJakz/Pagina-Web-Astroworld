@@ -28,9 +28,9 @@ main {
 /* Encabezado */
 header {
     background-color: var(--acento);
-    padding: 30px 0;
+    padding: 40px 0;
     text-align: center;
-    border-bottom: 5px solid var(--titulo);
+    border-bottom: 20px solid var(--titulo);
     margin-bottom: 30px;
 }
 
@@ -38,7 +38,7 @@ header h1 {
     color: var(--texto);
     font-size: 3rem;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 
