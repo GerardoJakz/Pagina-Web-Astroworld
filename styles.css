@@ -468,3 +468,13 @@ section, h1, h2 {
   border: none;
   border-radius: 12px;
 }
+
+/* Fotos Equipo */
+.img-redonda {
+  width: 150px;        
+  height: 150px;      
+  border-radius: 50%;  
+  border: 4px solid #333; 
+  object-fit: cover;   
+}
+
